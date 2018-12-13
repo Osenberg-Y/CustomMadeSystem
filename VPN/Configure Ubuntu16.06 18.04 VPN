@@ -1,0 +1,44 @@
+1, 安装shadowsocks客户端
+Ubuntu16.04:
+方法一
+1.sudo add-apt-repository ppa:hzwhuang/ss-qt5
+2.sudo apt-get update
+3.sudo apt-get install shadowsocks-qt5
+方法二：
+1.sudo apt-get install libbotan-1.10-0 libqrencode3
+2.下载 shadowsocks-qt5.zip
+3.解压，有三个deb包，直接双击安装。先安装两个以lib开头的包，然后安装shadowsocks-qt5_2.7.0-1_amd64.deb
+
+Ubuntu18.04:
+1.sudo apt-get install libbotan-1.10-1 libqrencode3
+2.下载 shadowsocks-qt5.zip
+3.解压，有三个deb包，直接双击安装。先安装两个以lib开头的包，然后安装shadowsocks-qt5_2.7.0-1_amd64.deb
+
+2.配置参数
+加密方式	端口	密码
+AES-256-CFB	10157	slightech
+节点名称	连接地址	备注信息	个人建议(你可以自己尝试各个服务器)
+新加坡 30249	sg-1.public.ximcloud.top	Gbps带宽，适合视频观看或文件下载	
+香港 30250	hk-1.public.ximcloud.top	延迟低200M带宽	经测试这个速度最快，但是谷歌搜索容易出现验证码
+香港 40250	hk-2.public.ximcloud.top	移动用户优化线路	
+香港 30560	hk-3.public.ximcloud.top	延迟低	
+日本 30249	jp-1.public.ximcloud.top	Gbps带宽，适合视频观看或文件下载	可以用来查数据，速度也比较快
+日本 30248	jp-2.public.ximcloud.top	连接用户数少	
+日本 31725	jp-3.public.ximcloud.top	100Mbps带宽，日本直连，Mbps带宽	
+维也纳 30317	vie-1.public.ximcloud.top	※新维也纳节点上线！	
+加拿大 34317	ca-1.public.ximcloud.top	※新加拿大节点上线！	
+美国 30881	us-1.public.ximcloud.top	电信次世代网络 亚洲优化 美国IP，谷歌问卷神器	
+美国 30882	us-2.public.ximcloud.top	美国IP，谷歌问卷神器	
+美国 30314	us-3.public.ximcloud.top	凑字数	
+国内中转香港	sz.web.nuannuan.online	无谷歌验证码	
+香港	hk1.web.nuannuan.online	无谷歌验证码 美国IP 突破部分限制IP段网站（比如弯弯的）	
+混合优化线路	1.mix.ximcloud.top	已对电信、联通、教育网优化	
+回国线路	1.gb.ximcloud.top	回国专用
+
+3.配置方法
+打开shadowsocks
+文件
+从gui-config.json导入
+下载文件：gui-config.jsongui-config.json
+之后点击连接，可以看到连接延迟，说明连接成功
+   
